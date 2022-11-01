@@ -41,10 +41,10 @@
 | `path`              | `{ [qualifier: BINS]: string } \| string` | `''` |
 | `ratio`             | `{ [qualifier: BINS]: string \| boolean }` | `{ ldpi: false, mdpi: '', tvdpi: false, hdpi: false, xhdpi: true, xxhdpi: true, xxxhdpi: true }` |
 | `text`              | `string` | `''` |
-| `whitelist`         | `string[]` | `['gif', 'png', 'webp', 'jpeg', 'jpg', 'jp2', 'jpg2', 'jpx', 'jpm', 'jxr', 'svg', 'svgz', 'avif', 'heif']` |
+| `whitelist`         | `string[]` | `['gif', 'png', 'webp', 'jpeg', 'jpg', 'jp2', 'jpg2', 'jpx', 'jpm', 'jxr', 'jxl', 'svg', 'svgz', 'avif', 'heif']` |
 
 ~~~ts
 type BINS = 'ldpi' | 'mdpi' | 'tvdpi' | 'hdpi' | 'xhdpi' | 'xxhdpi' | 'xxxhdpi';
 ~~~
 
-----------------------------------------------
+-----------------------------

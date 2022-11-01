@@ -18,7 +18,7 @@ export default {
     xxhdpi: true,
     xxxhdpi: true
   },
-  whitelist: ['gif', 'png', 'webp','jpeg', 'jpg', 'jp2', 'jpg2', 'jpx', 'jpm', 'jxr', 'svg', 'svgz', 'avif', 'heif'/*, 'wp2'*/],
+  whitelist: ['gif', 'png', 'webp', 'jpeg', 'jpg', 'jp2', 'jpg2', 'jpx', 'jpm', 'jxr', 'jxl', 'svg', 'svgz', 'avif', 'heif'],
   extensions: [
     'webp', // FF65+, CHR9+, OP11.5+, EDG18+
     'jxr',  // IE9+, EDG12+
