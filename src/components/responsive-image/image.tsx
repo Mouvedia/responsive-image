@@ -80,7 +80,7 @@ export class ResponsiveImage {
         commonPath = this.path !== Object(this.path);
 
     // @ts-ignore
-    for (let key in this.ratio) {
+    for (const key in this.ratio) {
       const value  = this.ratio[key],
             ratio  = Qualifier[key],
             suffix = value === true ? '@' + ratio : value,
@@ -98,10 +98,9 @@ export class ResponsiveImage {
   private getSources() {
     var sources = '';
 
-    for (let ext of this.extensions) {
-      if (sources)
-        sources += '\n';
-       sources += `<source srcset="${this.getSrcset(ext)}"  type='image/${getSubtype(ext)}'>`;
+    for (const ext of this.extensions) {
+      if (sources) sources += '\n';
+      sources += `<source srcset="${this.getSrcset(ext)}" type='image/${getSubtype(ext)}'>`;
     }
     return sources;
   }
